@@ -38,16 +38,20 @@ Adults: "Hopper", "Nancy", "Joyce", "Jonathan", "Murray" */
     echo "<h3> Soal 2</h3>";
     /* SOAL NO 2
 Tunjukkan panjang Array di Soal No 1 dan tampilkan isi dari masing-masing Array. */
-    echo "Cast Stranger Things: " . count($kids);
+    echo "Cast Stranger Things: ";
     echo "<br>";
-    echo "Total Kids: "; // Berapa panjang array kids echo "<br>";
+    echo "Total Kids: " . count($kids); // Berapa panjang array kids echo "<br>";
     echo "<ol>";
-    echo "<li> $kids[0] </li>";
+    for($i = 0; $i < 6; $i++){
+        echo "<li> $kids[$i] </li>";
+    }
     // Lanjutkan
     echo "</ol>";
     echo "Total Adults: " . count($adults); // Berapa panjang array adults echo "<br>";
     echo "<ol>";
-    echo "<li> $adults[0] </li>";
+    for($i = 0; $i < 5; $i++){
+        echo "<li> $adults[$i] </li>";
+    }
     // Lanjutkan
     echo "</ol>";
 
